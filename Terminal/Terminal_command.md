@@ -1,0 +1,19 @@
+Mac Terminal command
+----
+- `cd` = 해당 경로로 이동. 
+- `pwd` = 현재 경로를 표시
+- `ls` = 조건 검색어 
+- `cp` = 원본복사 ex) cp web /bin = 'web'폴더를 '/bin으로 이동
+- `mv` = 원본이동 ex) mv web /bin = "web"폴더를 /bin으로 이동
+- `rm` = 원복삭제 ex) rm web or rm -r web = "web"폴더를 삭제
+- `mkdir` = 폴더 생성 ex) mkdir web = "web" 폴더를 현재 경로에 생성
+- `rmdir` = 폴더삭제 ex) rmdir web = "web" 폴더를 현재 경로에서 삭제
+- `touch` = 파일생성 ex) touch web = "web"의 무용량 파일을 생성
+- `grep` = 파일안 내용찾기 ex) grep head index.php = "index.php" 에서 head가 포함된 낱말을 찾음.
+- `ln` = 링크 = ln -s /bin/web/ apath main = "/bin/web/" 의 해당경로를 apath main 으로 링크
+- `who` = 현재 접속 또는 로그인중인 모든 사용자를 찾아준다.
+- `ps` = ps(옵션) = 현재 실행중인 모든 프로세서 표시
+- `kill` = kill ichat = ichat 프로세서를 강제 종료
+- `find` = 조건검색어 ex) find /root/ -name"password" 파일이름에 password 를 포함한 파일을 /root 폴더에서 검색
+- `whereis` = whereis ichat = "ichat 가 있는 프로세서 경로를 표시
+- `sudo` = sudo vi /etc/php.ini root 권한으로 /etc/ 폴더에 php.ini 파일을 vi로 편집
