@@ -31,3 +31,24 @@ Git command
   - `fetch` 다른 저장소에서 개체를 다운로드하고 바로 병합하지는 않는 상태
   - `pull` 원격저장소(Repository)에서 로컬저장소로 가져와 로컬지점과 통합한다.
   - `push` 관련 객체를 가지고 원격저장소에 업데이트 위해 보낸다. 바로 업데이트 되지 않는다.
+
+6.원격 저장소 URL 변경
+  - 기존 원격 저장소 URL을 변경하기 위해 `git remote set-url`명령어를 사용
+  ```
+  $ git remote -v 
+    <!-- view existing remotes -->
+  origin https://github.com/user/repo.git(fetch)
+  origin https://github.com/user/repo.git(push)
+
+  $ git remote set-url origin https://github.com/user/repos2.git
+  ```
+
+  ```
+  $ git remote -v 
+  <!-- Verify new remote URL -->
+  origin https://github.com/user/repo2.git(fetch)
+  origin https://github.com/user/rep02.git(push)
+  ```
+  - 두 개의 인자를 가진다.
+    - 기존 원격 저장소 이름: origin
+    - 새로운 원격 저장소 URL: https://github.com/user/repo2.git
